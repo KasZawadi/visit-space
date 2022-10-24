@@ -1,0 +1,218 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+ }
+ 
+ body {
+     width: 100%;
+     height: 100vh;
+     font-family: "Roboto", serif;
+     font-size: 16px;
+     background-image: url("https://d3bkbkx82g74b8.cloudfront.net/eyJidWNrZXQiOiJsYWJyb290cy1hc3NldHMiLCJrZXkiOiJfcHVibGljXC9fZmlsZXNcL3N5c3RlbVwvY2tcL3RyZW5kaW5nXC9vcmlvbi0xNjU1NjU1XzE5MjAgKDEpXzk5ZTQwZTMxYzc5OWYwMTJhNDVlM2FkNTg1N2ZkYjY5LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NzAwLCJmaXQiOiJjb3ZlciJ9fX0="); 
+     background-size: cover;
+ }
+ 
+ 
+  /* This section is for the elemnts that use a lot of similar styles */
+ h1, h2 {
+     font-family: "Droid Serif", serif;
+     font-size: 2em;
+     font-weight: 800;
+     line-height: 3;
+     text-transform: capitalize;
+     color: #fff;
+ }
+ 
+ p {
+     font-size: 1.4em;
+     font-weight: 600;
+     line-height: 1.5;
+     color: #fff;
+ }
+ 
+ strong {
+     color: gold;
+ }
+ 
+ 
+ 
+ /* This section is for the header*/
+ header {
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 1em;
+     position: fixed;
+     top: 0%;
+     left: 0%;
+ }
+ 
+ 
+ 
+ header img {
+     width: 50px;
+     margin-left: 1em;
+ }
+ 
+ nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ 
+ nav a {
+     text-decoration: none;
+     margin: 0 1.3em;
+     text-transform: capitalize;
+     color: #fff;
+     font-family: "Droid Serif", serif;
+     font-size: 1.2em;
+     font-weight: 900;
+ }
+ 
+ nav a:hover, nav a:active {
+     color: gold;
+     cursor: pointer;
+ }
+ 
+ header.sticky {
+     background-color: #fff;
+     transition: all 300ms ease-in-out 0s;
+ }
+ 
+ header.sticky a {
+     color: #000;
+     transition: all 300ms ease-in-out 0s;
+ }
+ 
+ nav a:hover, nav a:active {
+     color: gold;
+     cursor: pointer;
+ }
+ 
+ /* this section is catered for the content */
+ 
+ main {
+     /* max-width: 1000px; */
+     width: 100%;
+ }
+ 
+ /* This section is for the title ad explanation of what the milky way is */
+ 
+ .milkyway {
+     width: 100%;
+     height: 37.5em;
+     display: flex;
+     justify-content: center;
+     /* align-items: center; */
+     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://nypost.com/wp-content/uploads/sites/2/2019/03/milky-way-galaxy.jpg?quality=75&strip=all&w=744");
+     background-size: cover;
+     background-position: center;
+ }
+ 
+ .tag-1 {
+     width: 100%;
+     max-width: 1000px;
+     margin: 12.5em auto; 
+     text-align: center;
+     padding: 2em;
+ }
+ 
+ 
+ /* this section is for the Origin, where the galaxy got its name from */
+ .origin {
+     width: 100%;
+     max-width: 62.5em;
+     margin: 0 auto;
+     padding: 5em;
+ }
+ 
+ .origin h2 {
+     text-align: center;
+ }
+ 
+ 
+ /* this part id for the general content area for the grid */
+ .looking {
+     max-width: 1000px;
+     width: 100%;
+     margin: 0 auto;
+    
+ }
+ 
+ .looking h2 {
+     text-align: center;
+ }
+ 
+ /* this section is for the grid of the the shape of the galaxy */
+ .grid {
+     display: flex;
+     flex-direction: column;
+     padding: 3em;
+ }
+ 
+ .up, .side {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: -1em;
+     margin-bottom: 2em;
+ }
+ img {
+     width: 25em;
+     height: 100%;
+ }
+ 
+ 
+ /* media queries */
+ 
+ @media screen and (max-width: 720px) {
+     nav a {
+         display: block;
+         font-size: .8em;
+         margin: .4em;
+     }
+ 
+ 
+     h2, h1 {
+         font-size: 1.5em;
+         line-height: 2.5;
+     }
+ 
+     p {
+         font-size: 1em;
+     }
+ 
+     .up, .side {
+         display: block;
+     }
+ 
+     img {
+         width: 100%;
+     }
+ 
+     .tag-1 {
+         /* margin-top: 40%; */
+     }
+ 
+ }
+ 
+ @media  screen and (max-width: 480px) {
+         .tag-1 {
+             /* margin-top: 50%; */
+             padding: 1em;
+         }
+ 
+         .origin, .grid {
+             padding: 1em;
+         }
+ 
+         p {
+             font-size: .8em;
+         }
+ 
+         h1, h2 {
+             font-size: 1.3em;
+         }
+ }

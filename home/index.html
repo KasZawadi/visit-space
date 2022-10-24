@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visit space</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Roboto:300" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="https://static.wikia.nocookie.net/cat-game-the-cat-collector/images/d/db/Starfield.png/revision/latest?cb=20200922052647" width="50" alt="a galactic cat">
+        <nav>
+            <a href="index.html">milkyway</a>
+            <a href="">plannets</a>
+            <a href="">stars</a>
+            <a href="">astroids</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="milkyway">
+            <div class="tag-1">
+                <h1>the milky way galaxy</h1>
+                <p>The milky way galaxy is a collection of stars dust and gases. This galaxy is where our solar system exist.
+                Space is very vast and is forever expanding, and our focus will be on <strong>The mily way</strong>. 
+                Well look soem of the plannets within our solar system, the biggest stars, as well as astroid fiels that exist within
+                our galaxy.
+                </p>
+            </div>
+        </section>
+
+        <section class="origin">
+            
+            <h2>name origin</h2>
+            <p><strong>The Milky Way</strong> gets its name a greek myth of the godess <strong>Hera</strong> who sprayed milk across the sky,
+                hence the name <strong>"Milky Way."</strong> Although this is th emoist common used name in western countries, other cultures 
+                have their own names such as the <strong>"Silver Ring"</strong> in china, and <strong>"Backbone night"</strong> in parts of 
+                North Africa.
+            </p>
+            
+        </section>
+
+        <section class="looking">
+            <h2>the shape of our galaxy</h2>
+            <div class="grid">
+                <div class="up">
+                    <img src="https://www.amnh.org/var/ezflow_site/storage/images/media/amnh/images/explore/ology-images/astronomy/the-milky-way-galaxy/bode-s-galaxy/4967591-2-eng-US/bode-s-galaxy.jpg"
+                     alt="the milkyway">
+                    <p> The shape to look at, is what we see in the night time. Usually just a dark spce with alot of stars.
+                        If we were to take ourselves out of our inviroment and look up to it it might be a formless circle, 
+                        that lights up.
+                    </p>
+                </div>
+                <div class="side">
+                    <img src="https://www.latimes.com/projects/milky-way-galaxy-warped-like-an-s/static/assets/warped-edge.jpg" alt="the mily way from the side">
+                    <p>For a better visual, on the way <strong>the milky way</strong> is actually shapped like, the side profile gives us a better example.
+                        from the side it would look like a giant, thin disk with a alight dent in the center. the flat shap is cause by
+                        the galaxy spinning around, and without gravity all of the plannets would fly off.
+                    </p>
+                </div>
+            </div>    
+        </section>
+    </main>
+
+    <script>
+        window.addEventListener("scroll", function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0)
+        })
+    </script>
+</body>
+</html>
